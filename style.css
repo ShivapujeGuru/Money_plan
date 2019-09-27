@@ -1,0 +1,108 @@
+.budget-section {
+  letter-spacing: 0.6;
+  font-family: "Courier New", Courier, monospace;
+}
+.budget-section .budget-content {
+  padding: 40px 0;
+  background-color: #2475b0;
+}
+.budget-section .budget-content h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+.budget-section .budget-content .budget-value {
+  display: flex;
+  color: rgba(255, 255, 255, 0.9);
+}
+.budget-section .budget-content .budget-value i {
+  margin: auto 20px !important;
+}
+.budget-section .budget-content .budget-viewer {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .budget-section .budget-content .budget-viewer {
+    width: 65%;
+  }
+}
+.budget-section .budget-content .budget-viewer .income-viewer,
+.budget-section .budget-content .budget-viewer .expences-viewer {
+  display: flex;
+  justify-content: space-between;
+}
+.budget-section .budget-content .budget-viewer .income-viewer p,
+.budget-section .budget-content .budget-viewer .expences-viewer p {
+  padding: 6px 18px;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+.budget-section .budget-content .budget-viewer .income-viewer p:nth-child(2) {
+  font-weight: 600;
+  color: #21ba45;
+}
+.budget-section .budget-content .budget-viewer .expences-viewer p:nth-child(2) {
+  font-weight: 600;
+  color: #db2828;
+}
+.budget-section .add-section {
+  background-color: #487eb0;
+}
+.budget-section .add-section .segment {
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  margin: 0;
+}
+.budget-section .add-section .segment .white-select {
+  background-color: #ffffff;
+}
+.budget-section .budget-list {
+  margin: 60px auto;
+}
+.budget-section .budget-list h2 {
+  padding: 0 20px;
+}
+.budget-section .budget-list .expences-list,
+.budget-section .budget-list .income-list {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 20px !important;
+}
+.budget-section .budget-list .expences-list .tiny,
+.budget-section .budget-list .income-list .tiny {
+  font-size: 8px;
+  margin-left: 20px;
+}
+.budget-section .budget-list .expences-list .tiny .icon,
+.budget-section .budget-list .income-list .tiny .icon {
+  height: 1.06em;
+}
+.budget-section .budget-list .expences-list p,
+.budget-section .budget-list .income-list p {
+  font-size: 15px;
+}
+.budget-section .budget-list .expences-list .close-opt,
+.budget-section .budget-list .income-list .close-opt {
+  margin-right: -60px;
+  transition: all 0.4s linear;
+}
+.budget-section .budget-list .expences-list:hover .close-opt,
+.budget-section .budget-list .income-list:hover .close-opt {
+  margin-right: 0;
+  transition: all 0.4s linear;
+}
+.budget-section .budget-list .expences-list .twice,
+.budget-section .budget-list .income-list .twice {
+  animation-iteration-count: 2;
+}
+.budget-section .budget-list .income-list p:nth-child(2) {
+  font-weight: 600;
+  color: #21ba45;
+}
+.budget-section .budget-list .expences-list p:nth-child(3) {
+  font-weight: 600;
+  color: #db2828;
+}
+
+/*# sourceMappingURL=style.css.map */

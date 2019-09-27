@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="canonical" href="/">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"></script>
+</head>
+
+<body>
+    <section class="budget-section">
+        <div class="budget-content">
+            <div class="ui stackable center aligned container">
+                <h1 class="ui header">Available Budget in Month</h1>
+
+                <div class="ui statistic">
+                    <div class="value budget-value">
+                        <!-- <i class="tiny plus icon"></i> -->
+                        <p>1,010</p>
+                    </div>
+                </div>
+
+                <div class="ui text container budget-viewer">
+                    <div class="ui segment income-viewer green">
+                        <p>Income</p>
+                        <p>+ 2,000</p>
+                    </div>
+                    <div class="ui segment expences-viewer red">
+                        <p>Expences</p>
+                        <p>- 1,280</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-section">
+            <div class="ui stackable center aligned container">
+                <div class="ui segment center aligned stackable grid">
+                    <div class="three wide column">
+                        <div class="ui buttons right floated">
+                            <div class="ui white-select button">Select</div>
+                            <div class="ui combo top right pointing dropdown icon button white-select">
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item"><i class="plus icon green"></i></div>
+                                    <div class="item"><i class="minus icon red"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="ui form field">
+                            <input type="text" name="first-name" placeholder="Expences">
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <div class="ui form field">
+                            <input type="text" name="first-name" placeholder="Value">
+                        </div>
+                    </div>
+                    <div class="two wide column">
+                        <button class="ui large circular green icon button">
+                            <i class="right checkmark icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="budget-list">
+            <div class="ui stackable grid container">
+                <div class="eight wide column">
+                    <h2 class="ui header green">Income</h2>
+                    <div class="ui celled list">
+                        <div class="item income-list">
+                            <p class="left floated">An excellent companion</p>
+                            <p class="right floated">+ 1,294</p>
+                        </div>
+                        <div class="item income-list">
+                            <p class="left floated">An excellent companion</p>
+                            <p class="right floated">+ 178</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <h2 class="ui header red">Expences</h2>
+                    <div class="ui celled list">
+                        <div class="item expences-list">
+                            <p class="left floated">An excellent companion</p>
+                            <button class="ui tiny basic circular red icon button right floated close-opt" id="remove-opt">
+                                <i class="close icon"></i>
+                            </button>
+                            <p class="right floated animated twice bounceInRight delay-80ms">- 345</p>
+                        </div>
+                        <div class="item expences-list">
+                            <p class="left floated">An excellent companion</p>
+                            <button class="ui tiny basic circular red icon button right floated close-opt">
+                                <i class="close icon"></i>
+                            </button>
+                            <p class="right floated animated twice bounceInRight delay-80ms">- 1,345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+
+</html>

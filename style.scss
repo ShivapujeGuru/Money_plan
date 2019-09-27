@@ -1,0 +1,136 @@
+.budget-section {
+    letter-spacing: 0.6;
+    font-family: 'Courier New', Courier, monospace;
+
+    .budget-content {
+        padding: 40px 0;
+        background-color: rgba(36, 117, 176, 1);
+
+        h1 {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .budget-value {
+            // margin-right: 25px;
+            display: flex;
+            color: rgba(255, 255, 255, 0.9);
+
+            i {
+                margin: auto 20px !important;
+            }
+        }
+
+        .budget-viewer {
+            width: 50%;
+
+            @media (max-width: 991px) {
+                width: 65%;
+            }
+
+            .income-viewer,
+            .expences-viewer {
+                p {
+                    padding: 6px 18px;
+                    font-size: 17px;
+                    margin-bottom: 0;
+                }
+
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .income-viewer {
+                p {
+                    &:nth-child(2) {
+                        font-weight: 600;
+                        color: rgb(33, 186, 69);
+                    }
+                }
+            }
+
+            .expences-viewer {
+                p {
+                    &:nth-child(2) {
+                        font-weight: 600;
+                        color: rgb(219, 40, 40);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .add-section {
+        background-color: rgba(72, 126, 176, 1);
+
+        .segment {
+            background: transparent;
+            border: none;
+            border-radius: 2px;
+            box-shadow: none;
+            margin: 0;
+
+            .white-select {
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    .budget-list {
+        margin: 60px auto;
+
+        h2 {
+            padding: 0 20px;
+        }
+
+        .expences-list,
+        .income-list {
+            cursor: pointer;
+            width: 100%;
+            overflow: hidden;
+            .tiny{
+                font-size: 8px;
+                margin-left: 20px;
+                .icon{
+                    height: 1.06em;
+                }
+            }
+            padding: 15px 20px !important;
+
+            p {
+                font-size: 15px;
+            }
+            .close-opt{
+                // display: none;
+                margin-right: -60px; 
+                transition: all 0.4s linear;
+            }
+            &:hover .close-opt {
+                // display: block;
+                margin-right: 0; 
+                transition: all 0.4s linear;                
+            }
+            .twice{
+                animation-iteration-count: 2;
+            }
+        }
+
+        .income-list {
+            p {
+                &:nth-child(2) {
+                    font-weight: 600;
+                    color: rgb(33, 186, 69);
+                }
+            }
+        }
+
+        .expences-list {
+            p {
+                &:nth-child(3) {
+                    font-weight: 600;
+                    color: rgb(219, 40, 40);
+                }
+            }
+        }
+    }
+}
