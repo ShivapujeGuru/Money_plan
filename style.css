@@ -10,6 +10,7 @@
   color: rgba(255, 255, 255, 0.9);
 }
 .budget-section .budget-content .budget-value {
+  margin-right: 25px;
   display: flex;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -56,6 +57,9 @@
 .budget-section .add-section .segment .white-select {
   background-color: #ffffff;
 }
+.budget-section .add-section .ui.selection.dropdown {
+  min-width: 9em;
+}
 .budget-section .budget-list {
   margin: 60px auto;
 }
@@ -94,9 +98,10 @@
 }
 .budget-section .budget-list .expences-list .twice,
 .budget-section .budget-list .income-list .twice {
-  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
-.budget-section .budget-list .income-list p:nth-child(2) {
+.budget-section .budget-list .income-list p:nth-child(3) {
   font-weight: 600;
   color: #21ba45;
 }

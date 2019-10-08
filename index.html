@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="canonical" href="/">
 
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"></script> -->
+
+    <style>
+        
+    </style>
+
+
 </head>
 
 <body>
@@ -22,7 +27,7 @@
 
                 <div class="ui statistic">
                     <div class="value budget-value">
-                        <!-- <i class="tiny plus icon"></i> -->
+                        <i class="small rupee icon"></i>
                         <p>1,010</p>
                     </div>
                 </div>
@@ -43,29 +48,24 @@
             <div class="ui stackable center aligned container">
                 <div class="ui segment center aligned stackable grid">
                     <div class="three wide column">
-                        <div class="ui buttons right floated">
-                            <div class="ui white-select button">Select</div>
-                            <div class="ui combo top right pointing dropdown icon button white-select">
-                                <i class="dropdown icon"></i>
-                                <div class="menu">
-                                    <div class="item"><i class="plus icon green"></i></div>
-                                    <div class="item"><i class="minus icon red"></i></div>
-                                </div>
-                            </div>
-                        </div>
+                        <select class="ui dropdown selection type">
+                            <option value="">Select</option>
+                            <option value="Income">Income &nbsp; <b>+</b></option>
+                            <option value="Expences">Expences &nbsp; <b>-</b></option>
+                        </select>
                     </div>
                     <div class="eight wide column">
-                        <div class="ui form field">
-                            <input type="text" name="first-name" placeholder="Expences">
+                        <div class="ui form">
+                            <input type="text" name="first-name" placeholder="Expences" class="description">
                         </div>
                     </div>
                     <div class="three wide column">
-                        <div class="ui form field">
-                            <input type="text" name="first-name" placeholder="Value">
+                        <div class="ui form">
+                            <input type="number" name="first-name" placeholder="Value" class="value_type">
                         </div>
                     </div>
                     <div class="two wide column">
-                        <button class="ui large circular green icon button">
+                        <button class="ui large circular green icon button" id="add_record">
                             <i class="right checkmark icon"></i>
                         </button>
                     </div>
@@ -80,11 +80,17 @@
                     <div class="ui celled list">
                         <div class="item income-list">
                             <p class="left floated">An excellent companion</p>
-                            <p class="right floated">+ 1,294</p>
+                            <button class="ui tiny basic circular green icon button right floated close-opt">
+                                <i class="close icon"></i>
+                            </button>
+                            <p class="right floated animated twice bounceInRight delay-0s">+1,294</p>
                         </div>
                         <div class="item income-list">
                             <p class="left floated">An excellent companion</p>
-                            <p class="right floated">+ 178</p>
+                            <button class="ui tiny basic circular green icon button right floated close-opt">
+                                <i class="close icon"></i>
+                            </button>
+                            <p class="right floated animated twice bounceInRight delay-0s">+178</p>
                         </div>
                     </div>
                 </div>
@@ -93,17 +99,17 @@
                     <div class="ui celled list">
                         <div class="item expences-list">
                             <p class="left floated">An excellent companion</p>
-                            <button class="ui tiny basic circular red icon button right floated close-opt" id="remove-opt">
+                            <button class="ui tiny basic circular red icon button right floated close-opt">
                                 <i class="close icon"></i>
                             </button>
-                            <p class="right floated animated twice bounceInRight delay-80ms">- 345</p>
+                            <p class="right floated animated twice bounceInRight delay-0s">-345</p>
                         </div>
                         <div class="item expences-list">
                             <p class="left floated">An excellent companion</p>
                             <button class="ui tiny basic circular red icon button right floated close-opt">
                                 <i class="close icon"></i>
                             </button>
-                            <p class="right floated animated twice bounceInRight delay-80ms">- 1,345</p>
+                            <p class="right floated animated twice bounceInRight delay-0s">-1,345</p>
                         </div>
                     </div>
                 </div>
@@ -111,7 +117,11 @@
         </div>
     </section>
 
+    <section class="ui container">
+        
+    </section>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
